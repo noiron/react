@@ -188,6 +188,9 @@ function getRollupOutputOptions(
     interop: false,
     name: globalName,
     sourcemap: true,
+    sourcemapPathTransform(relativePath) {
+      return relativePath.replace('../../../../packages', '/Users/code/debug-react/react/packages')
+    },
     esModule: false,
   };
 }
