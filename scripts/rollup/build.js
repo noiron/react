@@ -189,7 +189,7 @@ function getRollupOutputOptions(
     name: globalName,
     sourcemap: true,
     sourcemapPathTransform(relativePath) {
-      return relativePath.replace('../../../../packages', '/Users/code/debug-react/react/packages')
+      return relativePath.replace('../../../../packages', '/Users/wukai/code/debug-react/react/packages')
     },
     esModule: false,
   };
